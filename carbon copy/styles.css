@@ -1,0 +1,225 @@
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Titre {
+    font-size: 300%;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-weight:normal;
+}
+
+a {
+    text-decoration: none;
+    font-size: 300%;
+}
+
+.missionLink {
+    color: #5F81FA;
+}
+
+.aboutLink {
+    color:#C7C7C7;
+}
+
+.contactLink {
+    color:#BAFC75;
+}
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 2%;
+    margin-top: 2%;
+    gap:10px;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    margin-top: 15%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    white-space: nowrap;
+}
+
+h1 {
+    margin-left: 14%;
+    font-size: 300%;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.image {
+    white-space: nowrap;
+    gap: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image img {
+    object-fit: cover;
+    width: 33vw;
+    height: auto;
+    display: block;
+}
+
+.titreMission, .titreAbout, .titreContact{
+    color: white;
+    font-size: 250%;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 70px;
+    font-weight: lighter;
+}
+
+.mission p, .contact p, .about p, .contact input {
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: justify;
+}
+
+.mission p {
+    margin-bottom: 70px;
+}
+
+.mission {
+    background-color: #5F81FA;
+}
+
+.about {
+    background-color:#C7C7C7;
+    width: 60%;
+    height: 50vh;
+}
+
+.contact {
+    background-color:#BAFC75;
+    width: 40%;
+    height: 50vh;
+}
+
+.contact input {
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(92, 117, 92);
+    padding: 1%;
+}
+
+.contact button {
+    margin-top: 2%;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(92, 117, 92);
+    border-radius: 100px;
+    margin-left: 69%;
+}
+
+.dashboard {
+    width: 100%;
+}
+
+.dashboard h2{
+    font-size: 250%;
+    margin-left: 80px;
+    font-weight: lighter;
+}
+
+.dashboard p{
+    margin-left: 80px;
+    font-weight: lighter;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 80px;
+    margin-right: 80px;
+    justify-content: space-between;
+}
+
+.weather, .news, .horoscope {
+    border: 2px lightgray solid;
+    width: 28%;
+    padding: 2%;
+}
+
+.weather p, .news p, .horoscope p{
+    margin-left: 0px;
+    text-align: justify;
+}
+
+.aaa {
+    margin-top: 2%;
+}
+
+.weather h3, .news h3, .horoscope h3{
+    margin: 0px;
+}
+
+
+.weather h4, .news h4, .horoscope h4{
+    color: rgb(215, 215, 215);
+    font-size:90%;
+}
+
+
+footer {
+    margin-top: 15%;
+    border-top: 1px grey solid;
+    width: 100%;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 2%;
+    margin-bottom: 10%;
+}
+
+.missionLinkFooter, .aboutLinkFooter, .contactLinkFooter {
+    font-size: 100%;
+    margin-top: 0px;
+    text-decoration: underline;
+    color: black;
+}
+
+.ulFooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:0px;
+    margin-top: 0px;
+}
