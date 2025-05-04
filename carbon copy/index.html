@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body onload="getChuckNorrisJoke()">
     <nav>
         <div class="Titre">
             PlaceHoler int
@@ -26,7 +26,9 @@
     </nav>
 
     <header>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt sint omnis minima enim ab ex magnam inventore Lorem ipsum dolor sit amet consectetur, adipisicing.
+        <p id="phraseAcceuil">
+            a
+        </p>
     </header>
 
     <h1>
@@ -60,43 +62,53 @@
         <h2 class="titreContact">
             Contact
         </h2>
-        <p>
+        <p id="phraseBienvenue">
             Tell us who are you ?
         </p>
-        <input type="text" placeholder="Your Name">
-        <button>Introduce Yourself</button>
+        <input type="text" placeholder="Your Name" id="name">
+        <button id="introduceYourself" onclick="introduceYourself()">Introduce Yourself</button>
     </section>
     <section class="dashboard">
         <h2>
             Dashboard
         </h2>
         <div class="cards">
-            <div class="weather">
+            <div class="weather" onclick="popup('Weather', 'Wed 17 Feb 2021 12:45', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla repudiandae consequatur voluptatibus temporibus enim animi consectetur reiciendis delectus accusamus laboriosam! Nobis quis quam consequatur, dolorum consectetur a recusandae adipisci. Aspernatur.')">
                 <h3>Weather</h3>
                 <h4>Wed 17 Feb 2021 12:45</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam rem est ut ab maxime pariatur 
                     ducimus voluptate ipsam quibusdam ex rerum odio iusto, aut veritatis maiores perferendis vero facilis...
                 </p>
-                <p class="aaa">Read the Article</p>
+                <p class="linkArticle">Read the Article</p>
             </div>
-            <div class="news">
+            <div class="news" onclick="popup('News', 'Bitcon hits nex record 500000', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla repudiandae consequatur voluptatibus temporibus enim animi consectetur reiciendis delectus accusamus laboriosam! Nobis quis quam consequatur, dolorum consectetur a recusandae adipisci. Aspernatur.')">
                 <h3>News</h3>
                 <h4>Bitcon hits nex record 500000</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam rem est ut ab maxime pariatur 
                     ducimus voluptate ipsam quibusdam ex rerum odio iusto, aut veritatis maiores perferendis vero facilis...
                 </p>
-                <p>Read the Article</p>
+                <p class="linkArticle">Read the Article</p>
             </div>
-            <div class="horoscope">
+            <div class="horoscope" onclick="popup('Horoscope', 'pisces', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla repudiandae consequatur voluptatibus temporibus enim animi consectetur reiciendis delectus accusamus laboriosam! Nobis quis quam consequatur, dolorum consectetur a recusandae adipisci. Aspernatur.')">
                 <h3>Horoscope</h3>
                 <h4>pisces</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam rem est ut ab maxime pariatur 
                     ducimus voluptate ipsam quibusdam ex rerum odio iusto, aut veritatis maiores perferendis vero facilis...
                 </p>
-                <p>Read the Article</p>
+                <p class="linkArticle">Read the Article</p>
             </div>
         </div>
     </section>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <h3 id="popupTitle"></h3>
+        <h4 id="popupSubtitle"></h4>
+        <p id="popupText"></p>
+        <button id="popupClose" onclick="popupClose()">Close</button>
+        <p id="popupTextAlignCenter" onclick="popupTextAlign('Center')">Center</p>
+        <p id="popupTextAlignLeft" onclick="popupTextAlign('Left')">Left</p>
+    </div>
 
     <footer>
         <div>
